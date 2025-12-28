@@ -1,7 +1,7 @@
 # PiGly
 # 環境構築
 ## Dockerビルド
-1. git clone git@github.com:git@github.com:ooooooooo
+1. git clone git@github.com:git@github.com:uedarina24-hue/PIGLY
 2. cd coachtech-Checktest-mogitate
 3. DockerDesktopアプリを立ち上げる
 4. docker-compose up -d --build
