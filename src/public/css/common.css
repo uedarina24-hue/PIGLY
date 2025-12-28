@@ -1,0 +1,64 @@
+html,
+body {
+    height: 100%;
+}
+
+.app {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    height: 80px;
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header__logo {
+    color: #ff04b4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    padding: auto;
+    margin-left: 30px;
+}
+
+/* ページネーション */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination li:not(.active) {
+    border: 1px solid #E0DFDE;
+    padding: 4px 12px;
+}
+
+.pagination li:not(:last-child) {
+    border-right: none;
+}
+
+.pagination a {
+    color: #000;
+    text-decoration: none;
+}
+
+.pagination__link {
+    text-decoration: none;
+}
+
+.active {
+    padding: 4px 12px;
+    border: 1px solid #7fbef1;
+    background: linear-gradient(to right, #7fbef1, #fda4e9);
+    color: #FFF;
+}

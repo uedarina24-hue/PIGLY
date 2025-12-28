@@ -1,0 +1,130 @@
+/* バリデーションエラー */
+.edit__error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* container内骨組み */
+.container {
+    margin: 0 auto;
+    height: 100%;
+    background-color: gainsboro;
+    padding-top: 20px;
+}
+
+.container-inner {
+    margin: 32px auto 0;
+    width: 60%
+
+}
+
+/* 編集タイトル */
+.edit-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+/* 編集フォーム全体 */
+.edit-form {
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 8px;
+}
+
+/* 入力欄 共通 */
+.edit-form__data {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* 入力欄 単位 */
+.edit-calorie,
+.edit-weight {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.edit-form__unit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.edit-form__unit-text {
+    font-size: 14px;
+    color: #555;
+    white-space: nowrap;
+}
+
+/* テキストエリア */
+.edit-form__textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px 12px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* 更新ボタン */
+.modal-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.edit-button__update{
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+}
+
+.edit-button__update:hover {
+    background-color: #3729f8;
+}
+
+/* 戻るリンク */
+.edit-button__back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    text-decoration: none;
+    color: #000;
+    background-color: #ccc;
+    border-radius: 6px;
+}
+
+.edit-button__back:hover{
+    background-color: #e9e7e7;
+}
+
+/* 削除アイコン */
+.edit-button__delete {
+    margin-left: 50px;
+    background: none;
+    border: none;
+    color: red;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.edit-button__delete:focus-visible {
+    outline: 2px solid red;
+}

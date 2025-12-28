@@ -1,0 +1,110 @@
+/*  エラーメッセージ  */
+.auth__error {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* 画面全体の設定 */
+.auth-page {
+    margin: 0;
+    background: linear-gradient(#fda4e9, #fed295);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 上下左右の中央に配置 */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* フォームを包む白いカード */
+.auth-card {
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/*共通のタイトルスタイル*/
+.register-form__head {
+    text-align: center;
+}
+
+.register-form__heading {
+    font-size: 40px;
+    color: #f732cc;
+}
+
+.register-form__inf {
+    font-size: 12px;
+}
+
+/*共通の入力フォーム*/
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/*step2重さのスタイル*/
+.input-unit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-unit .form-input {
+    flex: 1;
+}
+
+.form-unit {
+    white-space: nowrap;
+}
+
+/* ボタンの共通スタイル */
+.form-button {
+    text-align: center;
+}
+
+.auth-button {
+    width: 50%;
+    padding: 12px;
+    background: linear-gradient(to right, #7fbef1, #fda4e9);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-button:hover {
+    background: linear-gradient(to right, #0289f8b8, #f303bf97);
+}
+
+/* リンクの共通スタイル */
+.form-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.auth-link {
+    color: rgb(21, 0, 255);
+}

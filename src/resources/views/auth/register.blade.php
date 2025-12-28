@@ -1,0 +1,70 @@
+@extends('layouts.guest')
+
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/auth.css')}}">
+@endsection
+
+
+@section('content')
+<div class="register-form">
+        <div class="register-form__text">
+            <!-- タイトル -->
+            <div class="register-form__head">
+                <h1 class="register-form__heading">PiGly</h1>
+                <h2 class="register-form__new">新規会員登録</h2>
+                <p class="register-form__inf">ステップ1：アカウント情報の登録</p>
+            </div>
+
+            <form class="register-form" action="{{ route('register') }}" method="POST" novalidate>
+                @csrf
+
+                <!-- 名前入力 -->
+                <div class="form-group">
+                    <label class="form-label" for="name">名前</label>
+                    <input class="form-input" type="text" id="name" name="name" required placeholder="山田 太郎">
+                    <div class="auth__error">
+                    @error('name')
+                    {{ $message }}
+                    @enderror
+                    </div>
+                </div>
+                <!-- メールアドレス入力 -->
+                <div class="form-group">
+                    <label class="form-label" for="email">メールアドレス</label>
+                    <input class="form-input" type="email" id="email" name="email" required placeholder="example@pigly.com">
+                    <div class="auth__error">
+                    @error('email')
+                    {{ $message }}
+                    @enderror
+                    </div>
+                </div>
+
+                <!-- パスワード入力 -->
+                <div class="form-group">
+                    <label class="form-label" for="password">パスワード</label>
+                    <input class="form-input" type="password" id="password" name="password" required placeholder="8文字以上で入力">
+                    <div class="auth__error">
+                    @error('password')
+                    {{ $message }}
+                    @enderror
+                    </div>
+                </div>
+
+                <!-- 次の画面にすすむボタン -->
+                <div class="form-button">
+                    <button class="auth-button" type="submit">
+                        次にすすむ
+                    </button>
+                </div>
+            </form>
+
+            <!-- ログインリンク -->
+            <div class="form-link">
+                <a class="auth-link" href="{{ route('login') }}">
+                    ログインはこちら
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection

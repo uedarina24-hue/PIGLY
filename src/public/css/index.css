@@ -1,0 +1,315 @@
+/* バリデーションエラー */
+.weight__error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* container内骨組み */
+.container{
+    margin: 0 auto;
+    height: 100%;
+    background-color: gainsboro;
+    border-top: 1px solid #d4cbcb;
+}
+
+.container-inner{
+    margin: 32px auto 0;
+    width: 84%
+}
+
+/* フォーム */
+.search-form {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* サマリー情報　*/
+.summary-wrapper {
+    padding-top: 32px;
+}
+
+.summary {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.summary-data{
+    flex: 1;
+    text-align: center;
+}
+
+.summary-number {
+    flex: 2;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 24px 0;
+    position: relative;
+}
+
+.summary-number:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 1.5em;
+    background-color: #999;
+}
+
+
+/* 検索フォーム　*/
+.search-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.search-form__date {
+    padding: 15px 50px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.search-form__button {
+    padding: 8px 23px;
+    border: none;
+    background-color: #4a90e2;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-form__button:hover {
+    background-color: #357abd;
+}
+
+
+/* リセットボタン　*/
+.search-form__reset {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 10px;
+    border-radius: 6px;
+
+    background-color: #c4defc;
+    color: #000;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+    border: 1px solid #86bcfb;
+}
+
+.search-form__reset:hover {
+    background-color: #dfeaf7;
+}
+
+/* データ追加ボタン　*/
+.add-button{
+    margin-right: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 9999px;
+    border: none;
+    background: linear-gradient(to right, #7fbef1, #fda4e9);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.add-button:hover {
+    background: linear-gradient(to right, #0289f8b8, #f303bf97);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* 一覧テーブル　*/
+.weight__table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.weight__row{
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.weight__table tr:not(:first-child):hover td {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.weight__label,
+.weight__data{
+    padding: 16px;
+    text-align: left;
+}
+
+.weight__data{
+    background-color: #fff;
+    font-weight: bold;
+}
+
+/* 編集アイコン */
+.weight__detail-btn{
+    color: #fb4cde;
+    text-decoration: none;
+}
+
+.weight__detail-btn:hover{
+    color: #cd2cc5;
+}
+
+/* ページネーション */
+.pagination {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+/* モーダル */
+.modal{
+    display: none;
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+
+/* 表示状態 */
+.modal:target {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* 背景 */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* モーダルコンテント */
+.modal-content {
+    position: relative;
+    max-width: 500px;
+    margin: 10vh auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+
+.modal-form{
+    background-color: #fff;
+    width: 400px;
+    margin: 10% auto;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.modal-form__data,
+.modal-form__textarea{
+    width: 100%;
+    padding: 8px 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* 入力欄 単位 */
+.edit-form__unit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.edit-form__unit-text {
+    font-size: 14px;
+    color: #555;
+    white-space: nowrap;
+}
+
+/* テキスト */
+.modal-form__textarea{
+    resize: vertical;
+    min-height: 80px;
+}
+
+.required::after {
+    content: "必須";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #e60023;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+/* モーダルボタン */
+.modal-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.modal-button__submit,
+.modal-button__back{
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.modal-button__submit{
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+.modal-button__back{
+    background-color: #ccc;
+    text-decoration: none;
+}
+
+.modal-close {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+
